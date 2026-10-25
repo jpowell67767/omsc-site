@@ -206,7 +206,17 @@ this.galNext = function () { self.galMove(1); };
 }
 renderVals() {
 // CORNHOLE-EVENT-START (updated automatically from the OMSC cornhole sign-up form)
-var event = null;
+var event = {
+dow: 'Thu', day: '19', mon: 'Nov',
+name: 'Bags & Brews',
+time: '5:30 – 9:00 PM',
+place: 'Fair Winds Brewing Company',
+details: [
+{ text: 'Limited to 15 teams' },
+{ text: 'Free if registered by Nov 13 · $10 after' },
+{ text: 'Pool play, then a tournament bracket, grouped by playing level' }
+]
+};
 // CORNHOLE-EVENT-END
 return { trackRef: this.trackRef, galPrev: this.galPrev, galNext: this.galNext, accent: this.props.accent ?? '#D4F04C', ev: event || { details: [] }, hasEvent: !!event, noEvent: !event };
 }
