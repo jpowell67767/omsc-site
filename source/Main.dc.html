@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OMSC Home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F4F6F1}
+a{color:#0E3B2E}a:hover{color:#16201B}
+.nav a{color:#FFFFFF;text-decoration:none;opacity:.85}
+.nav a:hover{opacity:1;color:#FFFFFF}
+.foot a{color:#C9D3CD;text-decoration:none}
+.foot a:hover{color:#FFFFFF}
+.gtrack::-webkit-scrollbar{display:none}
+.tex{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),repeating-linear-gradient(135deg,rgba(255,255,255,.028) 0 1px,transparent 1px 10px),radial-gradient(1100px 620px at 10% -12%,rgba(242,169,59,.13),transparent 62%),radial-gradient(900px 520px at 100% 115%,rgba(0,0,0,.32),transparent 62%) !important}
+.tex-sm{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),repeating-linear-gradient(135deg,rgba(255,255,255,.028) 0 1px,transparent 1px 10px),linear-gradient(160deg,rgba(255,255,255,.05),transparent 55%) !important}
+/* PHONE-START: phone-only layout; desktop is unchanged */
+@media (max-width: 640px){
+header > div{padding:6px 16px !important;gap:6px !important}
+header > div > a img{height:40px !important}
+header > div > a span{font-size:17px !important}
+nav.nav{flex-wrap:nowrap !important;overflow-x:auto;white-space:nowrap;gap:4px 18px !important;width:100%;scrollbar-width:none;font-size:14px !important}
+nav.nav::-webkit-scrollbar,nav[aria-label="Pentathlon"] > div::-webkit-scrollbar{display:none}
+nav.nav a{flex:0 0 auto}
+nav[aria-label="Pentathlon"] > div{flex-wrap:nowrap !important;overflow-x:auto;white-space:nowrap;padding:8px 16px !important;scrollbar-width:none}
+nav[aria-label="Pentathlon"] > div > *{flex:0 0 auto}
+section > div[style*="padding: 64px 24px"]{padding:28px 16px 36px !important;gap:20px !important}
+div[style*="padding-bottom: 40px; border-bottom"]{flex-wrap:nowrap !important;gap:14px !important;padding-bottom:22px !important}
+img[style*="height: 136px"]{height:60px !important}
+div[style*="flex: 1 1 360px"]{flex:1 1 0 !important;gap:4px !important}
+[style*="font-size: 60px"]{font-size:38px !important}
+div[style*="padding-bottom: 40px; border-bottom"] [style*="font-size: 60px"]{font-size:21px !important;letter-spacing:0.04em !important;white-space:nowrap}
+div[style*="font-size: 44px; line-height: 1; font-family"]{font-size:18px !important;white-space:nowrap}
+[style*="font-size: 48px"]{font-size:36px !important}
+[style*="font-size: 44px"]{font-size:28px !important}
+[style*="font-size: 40px"]{font-size:28px !important}
+[style*="font-size: 38px"]{font-size:27px !important}
+[style*="font-size: 34px"]{font-size:22px !important}
+[style*="font-size: 30px"]{font-size:24px !important}
+[style*="font-size: 26px"]{font-size:20px !important}
+[style*="font-size: 24px"]{font-size:19px !important}
+[style*="font-size: 19px"]{font-size:17px !important}
+img[style*="height: 176px"],img[style*="height: 182px"],img[style*="height: 128px"]{height:84px !important;width:84px !important}
+[style*="width: 1204px"],[style*="width: 580px"],[style*="width: 400px"]{width:auto !important;height:auto !important}
+section,section > div,form{max-width:100% !important;box-sizing:border-box}
+section[style*="padding: 88px 24px"],section[style*="padding: 64px 24px"],section[style*="padding: 56px 24px"],section[style*="padding: 48px 24px"],section[style*="padding: 32px 24px"],section[style*="padding: 40px 24px"]{padding-left:16px !important;padding-right:16px !important;padding-top:36px !important}
+[style*="padding: 44px 48px"],[style*="padding: 48px 44px"],[style*="padding: 44px;"],[style*="padding: 40px;"]{padding:24px 20px !important}
+[style*="min-height: 56px"]{width:100%;justify-content:center}
+[style*="minmax(340px"]{grid-template-columns:1fr !important}
+td[style*="padding: 9px 22px"],th[style*="padding: 12px 22px"]{padding-left:14px !important;padding-right:10px !important}
+.gtrack > div[style*="/ 5)"]{flex-basis:44% !important;min-width:0 !important}
+footer > div{padding-left:16px !important;padding-right:16px !important}
+footer > div[style*="padding: 56px"]{padding-top:36px !important;gap:24px !important}
+}
+/* PHONE-END */
+</style>
+</helmet>
+<div style="font-family: 'Source Sans 3', system-ui, sans-serif; color: #16201B; background: #F4F6F1; font-size: 17px; line-height: 1.55">
+
+<header class="tex" style="background: #0E3B2E; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.12)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+
+<nav class="nav" aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase">
+<a href="Main.dc.html" style="opacity: 1; padding: 10px 0; border-bottom: 2px solid {{accent}}">Home</a>
+<a href="Pickleball.dc.html" style="padding: 10px 0">Pickleball</a>
+<a href="Cornhole.dc.html" style="padding: 10px 0">Cornhole</a>
+<a href="Pentathlon.dc.html" style="padding: 10px 0">Pentathlon</a>
+<a href="Contact.dc.html" style="padding: 10px 0">Contact</a>
+<a href="https://www.instagram.com/oldmansportsclub" style="opacity: 1; padding: 10px 16px; border-radius: 999px; background: {{accent}}; color: #0E3B2E">Instagram</a>
+</nav>
+</div>
+</header>
+
+<section class="tex" style="background: #0E3B2E; color: #FFFFFF; position: relative">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 88px; display: flex; flex-direction: column; gap: 48px; padding-right: 20px; padding-left: 20px; position: relative">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.14); position: relative">
+<img src="/_blob/98b2130be4f89eab382b0331aed8713c" alt="Old Man Sports Club crest" style="height: 136px; width: auto; display: block; flex: 0 0 auto">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: Oswald, sans-serif; font-weight: 600; font-size: 60px; line-height: 1.08; letter-spacing: 0.12em; text-transform: uppercase; color: #ffffff">OLD MAN SPORTS CLUB</div>
+<div style="font-size: 44px; line-height: 1; font-family: Oswald, sans-serif; color: #D79831">Competition and Camaraderie</div>
+</div>
+</div>
+<h1 style="margin: 0; font-family: Oswald, sans-serif; font-weight: 700; font-size: 44px; line-height: 1.08; text-transform: uppercase; letter-spacing: 0.01em; text-align: start; position: static">Play hard.&nbsp; <br>Laugh Harder.&nbsp; <br>Remember it forever.</h1><div role="region" aria-label="Club photos" style="position: relative">
+<div class="gtrack" ref="{{trackRef}}" onMouseEnter="{{pause}}" onMouseLeave="{{resume}}" style="display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding-bottom: 20px">
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/4276045df0be1f35f921c7349597c923" alt="The OMP crew in matching OMP hats on the golf course" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/659d094471a6f4952d8377ca6225b356" alt="Cornhole night inside the Fair Winds brewery warehouse" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/1827b7b3a493bec5a0f6a61422c38602" alt="Pickleball champions with the trophy, flag and OMSC belt" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/86ad337cd5167f16ab93a7329b3e841c" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/86ad337cd5167f16ab93a7329b3e841c" alt="Scott's OMSC pickleball trading card" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/92cf7719cf020ebaf393b0f59f908b1c" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/92cf7719cf020ebaf393b0f59f908b1c" alt="Cornhole champions with their Michigan board" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/06c0601b7f48c10959501f6e483d636c" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/06c0601b7f48c10959501f6e483d636c" alt="Two champions with medals holding the OMSC championship belt" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/436bccf1858370e6a524dc4e556f8439" alt="Pickleball winners with the OMSC belt by the USA Pickleball official club banner" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/2b285e82b83bcaa00deaa7662fbc8a2b" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/2b285e82b83bcaa00deaa7662fbc8a2b" alt="Cornhole champions with the OMSC belt at Fair Winds" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/1ce6cebd6243b6637abbeef5568f08a3" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/1ce6cebd6243b6637abbeef5568f08a3" alt="Two members holding a championship bracket in a pool hall" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/97c5256c53a67d500e6250ac09804bde" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/97c5256c53a67d500e6250ac09804bde" alt="A member showing off the shake weight trophy" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/593055f90664938104efededee809fee" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/593055f90664938104efededee809fee" alt="OMSC hat and bowling trophies for Ballz of Fury, April 2015" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/754de55a793e0686b0123ff0bf7b870e" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/754de55a793e0686b0123ff0bf7b870e" alt="Members watching the scores at the bowling alley" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/90d29fd776c6cf2d2e0a3d14e2e1cd2f" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/90d29fd776c6cf2d2e0a3d14e2e1cd2f" alt="Breaking the rack on a pool table" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/5dd5a064d7fd0fb3305163c09f8e05b9" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/5dd5a064d7fd0fb3305163c09f8e05b9" alt="A champion holding up his medal on the patio" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/f0d512b1f311591c6e6e1a4d0d30ae7b" alt="OMSC hat, trophies and the shuffleboard bracket" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/b73b4ed774d1e60d46ffccc116e96b78" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/b73b4ed774d1e60d46ffccc116e96b78" alt="Shuffleboard night with the crew" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/1b7cae4d2f092420fcbad3d90ceed920" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/1b7cae4d2f092420fcbad3d90ceed920" alt="The shuffleboard crew with their trophies" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/f8fb9ee55733c1e047bcb12d1d1b17b6" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/f8fb9ee55733c1e047bcb12d1d1b17b6" alt="The crew celebrating at the brewery after the 4th of July tournament" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/6b331d5b2ebefa73d826d0f51c9b289b" alt="Holiday party with the crew in ugly sweaters" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/e876f8f4476347bd65a27a07392e79d7" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.55); transform: scale(1.15)"><img src="/_blob/e876f8f4476347bd65a27a07392e79d7" alt="July 4th Pickleball Bash flyer featuring The Deuce" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/0a78449ea5ad25ebba80ace56bed455e" alt="Holiday party champion biting his medal" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+<div style="flex: 0 0 calc((100% - 48px) / 5); min-width: 150px; scroll-snap-align: start; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.3)"><img src="/_blob/bb8620d3964f9c78b94094f00fcdc4b5" alt="Members in OMSC shirts at Oktoberfest" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
+</div>
+<div style="position: absolute; left: 0; right: 0; top: 0; bottom: 20px; display: flex; align-items: center; justify-content: space-between; padding: 0 8px; pointer-events: none"><button type="button" aria-label="Previous photos" onClick="{{galPrev}}" style="pointer-events: auto; width: 44px; height: 44px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,0.55); background: rgba(11,47,37,0.78); color: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,0.35)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></button><button type="button" aria-label="Next photos" onClick="{{galNext}}" style="pointer-events: auto; width: 44px; height: 44px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,0.55); background: rgba(11,47,37,0.78); color: #FFFFFF; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,0.35)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></button></div>
+</div>
+<p style="margin: 0 auto; max-width: 1100px; padding: 0 24px; box-sizing: border-box; font-size: 34px; line-height: 1.3; color: #d79831; font-style: italic; text-align: center">The Old Man Sports Club brings together good people who love to compete and make each other laugh. All who share those values are welcome.</p></div>
+</section>
+
+<section id="sports" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 40px">
+<h2 style="margin: 6px 0 0; font-family: Oswald, sans-serif; font-size: 44px; text-transform: uppercase; line-height: 1.05">Three ways to compete</h2><div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px; margin-bottom: 36px">
+<div>
+
+
+</div>
+
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px">
+<a href="Pickleball.dc.html" style="display: flex; flex-direction: column; background: #FFFFFF; border-radius: 12px; overflow: hidden; text-decoration: none; color: #16201B; border: 1px solid #DDE3DE">
+<div style="height: 200px; background: #0B2F25; overflow: hidden"><video src="/_blob/eb89ab2445d2ba794686019206cf0ae3" poster="/_blob/f0866e6f7fcfc92b1cef37e0214b7059" ref="{{cardRef0}}" muted="{{ true }}" playsInline="{{ true }}" preload="auto" aria-label="OMSC doubles pickleball game on an outdoor court" style="width: 100%; height: 100%; object-fit: cover; display: block"></video></div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: Oswald, sans-serif; font-size: 26px; text-transform: uppercase">Pickleball</h3>
+<p style="margin: 0; color: #4A5650">Our league, standings and match photos.</p>
+<span style="font-weight: 700; color: #0E3B2E; padding-top: 6px">View the league →</span>
+</div>
+</a>
+<a href="Cornhole.dc.html" style="display: flex; flex-direction: column; background: #FFFFFF; border-radius: 12px; overflow: hidden; text-decoration: none; color: #16201B; border: 1px solid #DDE3DE">
+<div style="height: 200px; background: #0B2F25; overflow: hidden"><video src="/_blob/8ad05832cc00a815f4e1771aae543b24" poster="/_blob/f33e8544dd77cc9787d06d32bc657eb5" ref="{{cardRef1}}" muted="{{ true }}" playsInline="{{ true }}" preload="auto" aria-label="Cornhole night inside the Fair Winds brewery warehouse" style="width: 100%; height: 100%; object-fit: cover; object-position: center 70%; display: block"></video></div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: Oswald, sans-serif; font-size: 26px; text-transform: uppercase">Cornhole</h3>
+<p style="margin: 0; color: #4A5650">The Tournament Series at Fair Winds Brewing.</p>
+<span style="font-weight: 700; color: #0E3B2E; padding-top: 6px">See events →</span>
+</div>
+</a>
+<a href="Pentathlon.dc.html" style="display: flex; flex-direction: column; background: #FFFFFF; border-radius: 12px; overflow: hidden; text-decoration: none; color: #16201B; border: 1px solid #DDE3DE">
+<div style="height: 200px; background: #0B2F25; overflow: hidden"><video src="/_blob/84523b9ec36435c3c582375e703476aa" poster="/_blob/bb334b940e05a5e1ed0be58fcc7b09f0" ref="{{cardRef2}}" muted="{{ true }}" playsInline="{{ true }}" preload="auto" aria-label="The Old Man Pentathlon turtle trophy and champions cups" style="width: 100%; height: 100%; object-fit: cover; object-position: center 22%; display: block"></video></div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: Oswald, sans-serif; font-size: 26px; text-transform: uppercase">Old Man Pentathlon</h3>
+<p style="margin: 0; color: #4A5650">Golf, bowling, cornhole, darts and pong</p>
+<span style="font-weight: 700; color: #0E3B2E; padding-top: 6px">Enter the arena →</span>
+</div>
+</a>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+<footer class="foot tex" style="background: #0B2F25; color: #C9D3CD">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 28px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between">
+<div style="flex: 1 1 280px; max-width: 360px">
+<div style="display: flex; align-items: center; gap: 14px"><img src="/_blob/98b2130be4f89eab382b0331aed8713c" alt="" style="height: 64px; width: auto; display: block"><div style="font-family: Oswald, sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.06em; text-transform: uppercase; color: #FFFFFF">Old Man Sports Club</div></div>
+<p style="margin: 10px 0 0">Competition and camaraderie. All who share those values are welcome.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: Oswald, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: #FFFFFF; font-size: 14px">Explore</div>
+<a href="Main.dc.html">Home</a><a href="Pickleball.dc.html">Pickleball</a><a href="Cornhole.dc.html">Cornhole</a><a href="Pentathlon.dc.html">Pentathlon</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: Oswald, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: #FFFFFF; font-size: 14px">Connect</div>
+<a href="Contact.dc.html">Contact us</a><a href="https://www.instagram.com/oldmansportsclub">Instagram</a>
+</div>
+</div>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px 32px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 14px">© 2026 Old Man Sports Club</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#F2A93B&quot;,&quot;options&quot;:[&quot;#D4F04C&quot;,&quot;#F2A93B&quot;,&quot;#7FD3E6&quot;]},&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:2700}}">
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+var self = this;
+this.cards = [null, null, null];
+this.cardIdx = 0;
+this.track = null;
+this.paused = false;
+this.trackRef = function (el) { if (el) self.track = el; };
+this.galPrev = function () { self.galMove(-1, true); };
+this.galNext = function () { self.galMove(1, true); };
+this.pause = function () { self.paused = true; };
+this.resume = function () { self.paused = false; };
+this.cardRefs = [0, 1, 2].map(function (i) { return function (el) { self.setupCard(i, el); }; });
+}
+galMove(dir, byUser) {
+var t = this.track; if (!t) return;
+var first = t.firstElementChild;
+var step = first ? first.getBoundingClientRect().width + 12 : t.clientWidth;
+if (byUser) step = Math.max(step, t.clientWidth + 12);
+var max = t.scrollWidth - t.clientWidth;
+var next = t.scrollLeft + dir * step;
+if (dir > 0 && t.scrollLeft >= max - 4) next = 0;
+else if (dir < 0 && t.scrollLeft <= 4) next = max;
+t.scrollTo({ left: next, behavior: 'smooth' });
+if (byUser) this.lastUser = Date.now();
+}
+prep(v) {
+v.muted = true; v.defaultMuted = true; v.playsInline = true;
+v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
+}
+tryPlay(v) {
+if (!v) return;
+try { var p = v.play(); if (p && p.catch) p.catch(function () {}); } catch (e) {}
+}
+setupCard(i, el) {
+if (!el || el === this.cards[i]) return;
+var self = this;
+this.prep(el); el.loop = false;
+el.addEventListener('ended', function () { if (self.cardIdx === i) self.nextCard(); });
+this.cards[i] = el;
+if (i === this.cardIdx) this.playCard();
+}
+playCard() {
+var self = this;
+var v = this.cards[this.cardIdx];
+if (this.cardTimer) clearTimeout(this.cardTimer);
+// safety net: move on even if a browser blocks playback
+this.cardTimer = setTimeout(function () { self.nextCard(); }, 20000);
+if (v) { try { v.currentTime = 0; } catch (e) {} this.tryPlay(v); }
+}
+nextCard() {
+var cur = this.cards[this.cardIdx];
+if (cur) { try { cur.pause(); cur.currentTime = 0; } catch (e) {} }
+this.cardIdx = (this.cardIdx + 1) % 3;
+this.playCard();
+}
+componentDidMount() {
+var self = this;
+// slide one photo along every 4 seconds; wait longer after someone uses the arrows
+this.timer = setInterval(function () {
+if (self.paused) return;
+if (self.lastUser && Date.now() - self.lastUser < 8000) return;
+self.galMove(1, false);
+}, 4000);
+}
+componentWillUnmount() {
+if (this.timer) clearInterval(this.timer);
+if (this.cardTimer) clearTimeout(this.cardTimer);
+}
+renderVals() {
+return {
+accent: this.props.accent ?? '#D4F04C',
+trackRef: this.trackRef, galPrev: this.galPrev, galNext: this.galNext,
+pause: this.pause, resume: this.resume,
+cardRef0: this.cardRefs[0], cardRef1: this.cardRefs[1], cardRef2: this.cardRefs[2]
+};
+}
+}
+</script>
+</body>
+</html>

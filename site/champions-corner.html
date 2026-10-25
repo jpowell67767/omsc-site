@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Champions Corner</title>
+<link rel="icon" href="images/98b2130be4f89eab382b0331aed8713c.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F4F6F1}
+a{color:#0E3B2E}a:hover{color:#16201B}
+.nav a{color:#FFFFFF;text-decoration:none;opacity:.85}
+.nav a:hover{opacity:1;color:#FFFFFF}
+.foot a{color:#C9D3CD;text-decoration:none}
+.foot a:hover{color:#FFFFFF}
+.tex{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),repeating-linear-gradient(135deg,rgba(255,255,255,.028) 0 1px,transparent 1px 10px),radial-gradient(1100px 620px at 10% -12%,rgba(242,169,59,.13),transparent 62%),radial-gradient(900px 520px at 100% 115%,rgba(0,0,0,.32),transparent 62%) !important}
+.tex-sm{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),repeating-linear-gradient(135deg,rgba(255,255,255,.028) 0 1px,transparent 1px 10px),linear-gradient(160deg,rgba(255,255,255,.05),transparent 55%) !important}
+/* PHONE-START: phone-only layout; desktop is unchanged */
+@media (max-width: 640px){
+header > div{padding:6px 16px !important;gap:6px !important}
+header > div > a img{height:40px !important}
+header > div > a span{font-size:17px !important}
+nav.nav{flex-wrap:nowrap !important;overflow-x:auto;white-space:nowrap;gap:4px 18px !important;width:100%;scrollbar-width:none;font-size:14px !important}
+nav.nav::-webkit-scrollbar,nav[aria-label="Pentathlon"] > div::-webkit-scrollbar{display:none}
+nav.nav a{flex:0 0 auto}
+nav[aria-label="Pentathlon"] > div{flex-wrap:nowrap !important;overflow-x:auto;white-space:nowrap;padding:8px 16px !important;scrollbar-width:none}
+nav[aria-label="Pentathlon"] > div > *{flex:0 0 auto}
+section > div[style*="padding: 64px 24px"]{padding:28px 16px 36px !important;gap:20px !important}
+div[style*="padding-bottom: 40px; border-bottom"]{flex-wrap:nowrap !important;gap:14px !important;padding-bottom:22px !important}
+img[style*="height: 136px"]{height:60px !important}
+div[style*="flex: 1 1 360px"]{flex:1 1 0 !important;gap:4px !important}
+[style*="font-size: 60px"]{font-size:38px !important}
+div[style*="padding-bottom: 40px; border-bottom"] [style*="font-size: 60px"]{font-size:21px !important;letter-spacing:0.04em !important;white-space:nowrap}
+div[style*="font-size: 44px; line-height: 1; font-family"]{font-size:18px !important;white-space:nowrap}
+[style*="font-size: 48px"]{font-size:36px !important}
+[style*="font-size: 44px"]{font-size:28px !important}
+[style*="font-size: 40px"]{font-size:28px !important}
+[style*="font-size: 38px"]{font-size:27px !important}
+[style*="font-size: 34px"]{font-size:22px !important}
+[style*="font-size: 30px"]{font-size:24px !important}
+[style*="font-size: 26px"]{font-size:20px !important}
+[style*="font-size: 24px"]{font-size:19px !important}
+[style*="font-size: 19px"]{font-size:17px !important}
+img[style*="height: 176px"],img[style*="height: 182px"],img[style*="height: 128px"]{height:84px !important;width:84px !important}
+[style*="width: 1204px"],[style*="width: 580px"],[style*="width: 400px"]{width:auto !important;height:auto !important}
+section,section > div,form{max-width:100% !important;box-sizing:border-box}
+section[style*="padding: 88px 24px"],section[style*="padding: 64px 24px"],section[style*="padding: 56px 24px"],section[style*="padding: 48px 24px"],section[style*="padding: 32px 24px"],section[style*="padding: 40px 24px"]{padding-left:16px !important;padding-right:16px !important;padding-top:36px !important}
+[style*="padding: 44px 48px"],[style*="padding: 48px 44px"],[style*="padding: 44px;"],[style*="padding: 40px;"]{padding:24px 20px !important}
+[style*="min-height: 56px"]{width:100%;justify-content:center}
+[style*="minmax(340px"]{grid-template-columns:1fr !important}
+td[style*="padding: 9px 22px"],th[style*="padding: 12px 22px"]{padding-left:14px !important;padding-right:10px !important}
+.gtrack > div[style*="/ 5)"]{flex-basis:44% !important;min-width:0 !important}
+footer > div{padding-left:16px !important;padding-right:16px !important}
+footer > div[style*="padding: 56px"]{padding-top:36px !important;gap:24px !important}
+}
+/* PHONE-END */
+</style>
+</head>
+<body>
+<div id="app">
+
+<div style="font-family: &#x27;Source Sans 3&#x27;, system-ui, sans-serif; color: #16201B; background: #F4F6F1; font-size: 17px; line-height: 1.55">
+
+<header class="tex" style="background: #0E3B2E; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.12)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" style="display: flex; align-items: center; gap: 12px; color: #FFFFFF; text-decoration: none">
+<img src="images/98b2130be4f89eab382b0331aed8713c.png" alt="" style="height: 52px; width: auto; display: block">
+<span style="font-family: Oswald, sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.06em; text-transform: uppercase">Old Man Sports Club</span>
+</a>
+<nav class="nav" aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase">
+<a href="index.html" style="padding: 10px 0">Home</a>
+<a href="pickleball.html" style="padding: 10px 0">Pickleball</a>
+<a href="cornhole.html" style="padding: 10px 0">Cornhole</a>
+<a href="pentathlon.html" style="opacity: 1; padding: 10px 0; border-bottom: 2px solid #F2A93B">Pentathlon</a>
+<a href="contact.html" style="padding: 10px 0">Contact</a>
+<a href="https://www.instagram.com/oldmansportsclub" style="opacity: 1; padding: 10px 16px; border-radius: 999px; background: #F2A93B; color: #0E3B2E">Instagram</a>
+</nav>
+</div>
+</header>
+
+<nav aria-label="Pentathlon" style="background: #FFFFFF; border-bottom: 1px solid #DDE3DE">
+<div style="max-width: 1200px; margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<span style="display: inline-flex; align-items: center; gap: 10px; font-family: Oswald, sans-serif; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #3E6B59; margin-right: 8px"><img src="images/4c02b27822dfead0b11520665c6573be.png" alt="" style="height: 36px; width: 36px; display: block">Old Man Pentathlon</span>
+<a href="pentathlon.html" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 999px; color: #0E3B2E; text-decoration: none; font-weight: 600; font-size: 15px">Overview</a>
+<a href="champions-corner.html" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 999px; background: #0E3B2E; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px">Champions Corner</a>
+<a href="event-statistics.html" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 999px; color: #0E3B2E; text-decoration: none; font-weight: 600; font-size: 15px">Event Statistics</a>
+<a href="leader-boards.html" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 999px; color: #0E3B2E; text-decoration: none; font-weight: 600; font-size: 15px">Yearly Leader Boards</a>
+</div>
+</nav>
+
+<section class="tex" style="background: #0E3B2E; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 72px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 48px">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="font-family: Oswald, sans-serif; font-weight: 600; font-size: 26px; line-height: 1.1; letter-spacing: 0.12em; text-transform: uppercase; color: #F2A93B">Old Man Pentathlon</div>
+<h1 style="margin: 0; font-family: Oswald, sans-serif; font-weight: 700; font-size: 60px; line-height: 1.02; text-transform: uppercase">Champions Corner</h1>
+<p style="margin: 0; max-width: 520px; font-size: 19px; color: #D5DED9">Every team to win the OMP since the 2009 revival.</p>
+</div>
+<img src="images/0fda9890b5a8a55ea29380e8480e081b.png" alt="Old Man Pentathlon logo" style="height: 176px; width: 176px; display: block; flex: 0 0 auto">
+</div>
+</div>
+
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 24px">
+<div style="font-family: Oswald, sans-serif; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #3E6B59">Most titles</div>
+<h2 style="margin: 6px 0 24px; font-family: Oswald, sans-serif; font-size: 40px; text-transform: uppercase; line-height: 1.05">The dynasty table</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
+
+<div style="background: #FFFFFF; border: 1px solid #DDE3DE; border-radius: 12px; padding: 22px 24px; display: flex; align-items: center; gap: 18px">
+<div style="font-family: Oswald, sans-serif; font-size: 48px; line-height: 1; color: #0E3B2E; min-width: 40px">5</div>
+<div style="display: flex; flex-direction: column">
+<span style="font-weight: 700; font-size: 18px">Sean &amp; Jimmy</span>
+<span style="color: #4A5650; font-size: 15px">2015 · 2016 · 2017 · 2018 · 2022</span>
+</div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #DDE3DE; border-radius: 12px; padding: 22px 24px; display: flex; align-items: center; gap: 18px">
+<div style="font-family: Oswald, sans-serif; font-size: 48px; line-height: 1; color: #0E3B2E; min-width: 40px">4</div>
+<div style="display: flex; flex-direction: column">
+<span style="font-weight: 700; font-size: 18px">Vinny &amp; Andy</span>
+<span style="color: #4A5650; font-size: 15px">2014 · 2021 · 2024 · 2025</span>
+</div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #DDE3DE; border-radius: 12px; padding: 22px 24px; display: flex; align-items: center; gap: 18px">
+<div style="font-family: Oswald, sans-serif; font-size: 48px; line-height: 1; color: #0E3B2E; min-width: 40px">2</div>
+<div style="display: flex; flex-direction: column">
+<span style="font-weight: 700; font-size: 18px">Sean &amp; Adam</span>
+<span style="color: #4A5650; font-size: 15px">2009 · 2010</span>
+</div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #DDE3DE; border-radius: 12px; padding: 22px 24px; display: flex; align-items: center; gap: 18px">
+<div style="font-family: Oswald, sans-serif; font-size: 48px; line-height: 1; color: #0E3B2E; min-width: 40px">2</div>
+<div style="display: flex; flex-direction: column">
+<span style="font-weight: 700; font-size: 18px">Scott &amp; Mike</span>
+<span style="color: #4A5650; font-size: 15px">2012 · 2013</span>
+</div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #DDE3DE; border-radius: 12px; padding: 22px 24px; display: flex; align-items: center; gap: 18px">
+<div style="font-family: Oswald, sans-serif; font-size: 48px; line-height: 1; color: #0E3B2E; min-width: 40px">1</div>
+<div style="display: flex; flex-direction: column">
+<span style="font-weight: 700; font-size: 18px">Jimmy &amp; Head</span>
+<span style="color: #4A5650; font-size: 15px">2011</span>
+</div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #DDE3DE; border-radius: 12px; padding: 22px 24px; display: flex; align-items: center; gap: 18px">
+<div style="font-family: Oswald, sans-serif; font-size: 48px; line-height: 1; color: #0E3B2E; min-width: 40px">1</div>
+<div style="display: flex; flex-direction: column">
+<span style="font-weight: 700; font-size: 18px">Nick &amp; Jamula</span>
+<span style="color: #4A5650; font-size: 15px">2019</span>
+</div>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #DDE3DE; border-radius: 12px; padding: 22px 24px; display: flex; align-items: center; gap: 18px">
+<div style="font-family: Oswald, sans-serif; font-size: 48px; line-height: 1; color: #0E3B2E; min-width: 40px">1</div>
+<div style="display: flex; flex-direction: column">
+<span style="font-weight: 700; font-size: 18px">Tim &amp; Mike</span>
+<span style="color: #4A5650; font-size: 15px">2020</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 88px">
+<div style="font-family: Oswald, sans-serif; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #3E6B59">Year by year</div>
+<h2 style="margin: 6px 0 24px; font-family: Oswald, sans-serif; font-size: 40px; text-transform: uppercase; line-height: 1.05">Past champions</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px">
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2025</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Vinny &amp; Andy</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2024</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Vinny &amp; Andy</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2022</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Sean &amp; Jimmy</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2021</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Vinny &amp; Andy</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2020</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Tim &amp; Mike</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2019</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Nick &amp; Jamula</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2018</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Sean &amp; Jimmy</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2017</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Sean &amp; Jimmy</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2016</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Sean &amp; Jimmy</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2015</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Sean &amp; Jimmy</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2014</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Vinny &amp; Andy</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2013</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Scott &amp; Mike</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2012</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Scott &amp; Mike</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2011</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Jimmy &amp; Head</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2010</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Sean &amp; Adam</span>
+</div>
+
+<div class="tex-sm" style="background: #0E3B2E; color: #FFFFFF; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 4px; min-height: 120px; box-sizing: border-box">
+<span style="font-family: Oswald, sans-serif; font-size: 34px; line-height: 1; color: #F2A93B">2009</span>
+<span style="font-family: Oswald, sans-serif; font-size: 22px; text-transform: uppercase; margin-top: auto">Sean &amp; Adam</span>
+</div>
+
+</div>
+</section>
+
+<footer class="foot tex" style="background: #0B2F25; color: #C9D3CD">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 28px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between">
+<div style="flex: 1 1 280px; max-width: 360px">
+<div style="display: flex; align-items: center; gap: 14px"><img src="images/98b2130be4f89eab382b0331aed8713c.png" alt="" style="height: 64px; width: auto; display: block"><div style="font-family: Oswald, sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.06em; text-transform: uppercase; color: #FFFFFF">Old Man Sports Club</div></div>
+<p style="margin: 10px 0 0">Competition and camaraderie. All who share those values are welcome.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: Oswald, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: #FFFFFF; font-size: 14px">Explore</div>
+<a href="index.html">Home</a><a href="pickleball.html">Pickleball</a><a href="cornhole.html">Cornhole</a><a href="pentathlon.html">Pentathlon</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: Oswald, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: #FFFFFF; font-size: 14px">Connect</div>
+<a href="contact.html">Contact us</a><a href="https://www.instagram.com/oldmansportsclub">Instagram</a>
+</div>
+</div>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px 32px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 14px">© 2026 Old Man Sports Club</div>
+</footer>
+
+</div>
+</div>
+<script type="module" src="js/champions-corner.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OMSC Cornhole</title>
+<link rel="icon" href="images/98b2130be4f89eab382b0331aed8713c.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F4F6F1}
+a{color:#0E3B2E}a:hover{color:#16201B}
+.nav a{color:#FFFFFF;text-decoration:none;opacity:.85}
+.nav a:hover{opacity:1;color:#FFFFFF}
+.foot a{color:#C9D3CD;text-decoration:none}
+.foot a:hover{color:#FFFFFF}
+.gtrack::-webkit-scrollbar{display:none}
+.tex{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),repeating-linear-gradient(135deg,rgba(255,255,255,.028) 0 1px,transparent 1px 10px),radial-gradient(1100px 620px at 10% -12%,rgba(242,169,59,.13),transparent 62%),radial-gradient(900px 520px at 100% 115%,rgba(0,0,0,.32),transparent 62%) !important}
+.tex-sm{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),repeating-linear-gradient(135deg,rgba(255,255,255,.028) 0 1px,transparent 1px 10px),linear-gradient(160deg,rgba(255,255,255,.05),transparent 55%) !important}
+/* PHONE-START: phone-only layout; desktop is unchanged */
+@media (max-width: 640px){
+header > div{padding:6px 16px !important;gap:6px !important}
+header > div > a img{height:40px !important}
+header > div > a span{font-size:17px !important}
+nav.nav{flex-wrap:nowrap !important;overflow-x:auto;white-space:nowrap;gap:4px 18px !important;width:100%;scrollbar-width:none;font-size:14px !important}
+nav.nav::-webkit-scrollbar,nav[aria-label="Pentathlon"] > div::-webkit-scrollbar{display:none}
+nav.nav a{flex:0 0 auto}
+nav[aria-label="Pentathlon"] > div{flex-wrap:nowrap !important;overflow-x:auto;white-space:nowrap;padding:8px 16px !important;scrollbar-width:none}
+nav[aria-label="Pentathlon"] > div > *{flex:0 0 auto}
+section > div[style*="padding: 64px 24px"]{padding:28px 16px 36px !important;gap:20px !important}
+div[style*="padding-bottom: 40px; border-bottom"]{flex-wrap:nowrap !important;gap:14px !important;padding-bottom:22px !important}
+img[style*="height: 136px"]{height:60px !important}
+div[style*="flex: 1 1 360px"]{flex:1 1 0 !important;gap:4px !important}
+[style*="font-size: 60px"]{font-size:38px !important}
+div[style*="padding-bottom: 40px; border-bottom"] [style*="font-size: 60px"]{font-size:21px !important;letter-spacing:0.04em !important;white-space:nowrap}
+div[style*="font-size: 44px; line-height: 1; font-family"]{font-size:18px !important;white-space:nowrap}
+[style*="font-size: 48px"]{font-size:36px !important}
+[style*="font-size: 44px"]{font-size:28px !important}
+[style*="font-size: 40px"]{font-size:28px !important}
+[style*="font-size: 38px"]{font-size:27px !important}
+[style*="font-size: 34px"]{font-size:22px !important}
+[style*="font-size: 30px"]{font-size:24px !important}
+[style*="font-size: 26px"]{font-size:20px !important}
+[style*="font-size: 24px"]{font-size:19px !important}
+[style*="font-size: 19px"]{font-size:17px !important}
+img[style*="height: 176px"],img[style*="height: 182px"],img[style*="height: 128px"]{height:84px !important;width:84px !important}
+[style*="width: 1204px"],[style*="width: 580px"],[style*="width: 400px"]{width:auto !important;height:auto !important}
+section,section > div,form{max-width:100% !important;box-sizing:border-box}
+section[style*="padding: 88px 24px"],section[style*="padding: 64px 24px"],section[style*="padding: 56px 24px"],section[style*="padding: 48px 24px"],section[style*="padding: 32px 24px"],section[style*="padding: 40px 24px"]{padding-left:16px !important;padding-right:16px !important;padding-top:36px !important}
+[style*="padding: 44px 48px"],[style*="padding: 48px 44px"],[style*="padding: 44px;"],[style*="padding: 40px;"]{padding:24px 20px !important}
+[style*="min-height: 56px"]{width:100%;justify-content:center}
+[style*="minmax(340px"]{grid-template-columns:1fr !important}
+td[style*="padding: 9px 22px"],th[style*="padding: 12px 22px"]{padding-left:14px !important;padding-right:10px !important}
+.gtrack > div[style*="/ 5)"]{flex-basis:44% !important;min-width:0 !important}
+footer > div{padding-left:16px !important;padding-right:16px !important}
+footer > div[style*="padding: 56px"]{padding-top:36px !important;gap:24px !important}
+}
+/* PHONE-END */
+</style>
+</head>
+<body>
+<div id="app">
+
+<div style="font-family: &#x27;Source Sans 3&#x27;, system-ui, sans-serif; color: #16201B; background: #F4F6F1; font-size: 17px; line-height: 1.55">
+
+<header class="tex" style="background: #0E3B2E; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.12)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" style="display: flex; align-items: center; gap: 12px; color: #FFFFFF; text-decoration: none">
+<img src="images/98b2130be4f89eab382b0331aed8713c.png" alt="" style="height: 52px; width: auto; display: block">
+<span style="font-family: Oswald, sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.06em; text-transform: uppercase">Old Man Sports Club</span>
+</a>
+<nav class="nav" aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase">
+<a href="index.html" style="padding: 10px 0">Home</a>
+<a href="pickleball.html" style="padding: 10px 0">Pickleball</a>
+<a href="cornhole.html" style="opacity: 1; padding: 10px 0; border-bottom: 2px solid #F2A93B">Cornhole</a>
+<a href="pentathlon.html" style="padding: 10px 0">Pentathlon</a>
+<a href="contact.html" style="padding: 10px 0">Contact</a>
+<a href="https://www.instagram.com/oldmansportsclub" style="opacity: 1; padding: 10px 16px; border-radius: 999px; background: #F2A93B; color: #0E3B2E">Instagram</a>
+</nav>
+</div>
+</header>
+
+<section class="tex" style="background: #0E3B2E; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 72px; display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: Oswald, sans-serif; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #F2A93B">OMSC Events</div>
+<h1 style="margin: 0; font-family: Oswald, sans-serif; font-weight: 700; font-size: 60px; line-height: 1.02; text-transform: uppercase">Cornhole</h1>
+<p style="margin: 0; max-width: 600px; font-size: 19px; color: #D5DED9">Welcome to our cornhole events. Bring a partner, bring your best throw, and bring your smack talk.</p>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 32px">
+<div style="background: #FFFFFF; border: 1px solid #DDE3DE; border-radius: 16px; overflow: hidden; display: flex; flex-wrap: wrap">
+<div style="flex: 1 1 420px; min-width: 0; min-height: 320px; background: #0B2F25"><img src="images/659d094471a6f4952d8377ca6225b356.jpg" alt="Cornhole night inside the Fair Winds brewery warehouse" style="width: 100%; height: 100%; min-height: 320px; object-fit: cover; display: block"></div>
+<div style="flex: 1 1 420px; min-width: 0; padding: 44px; display: flex; flex-direction: column; gap: 14px; box-sizing: border-box">
+<div style="font-family: Oswald, sans-serif; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #3E6B59">Recent events</div>
+<h2 style="margin: 0; font-family: Oswald, sans-serif; font-size: 38px; text-transform: uppercase; line-height: 1.05">Tournament Series at Fair Winds</h2>
+<p style="margin: 0; color: #4A5650">Our cornhole tournament series, hosted by our friends at Fair Winds Brewing Company.</p>
+<a href="http://www.fairwindsbrewing.com" aria-label="Visit Fair Winds Brewing Company" style="flex: 1 1 auto; display: flex; align-items: center; justify-content: center; padding: 16px 0 0; text-decoration: none"><img src="images/2f66c80627928435fb27fdb353a27add.png" alt="Fair Winds Brewing Company" style="width: 100%; max-width: 320px; height: auto; display: block"></a>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 32px 24px 8px">
+<div class="tex" style="background: #0E3B2E; color: #FFFFFF; border-radius: 16px; padding: 44px 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px 48px">
+
+
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<div style="font-family: Oswald, sans-serif; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #F2A93B">Up next</div>
+<h2 style="margin: 0; font-family: Oswald, sans-serif; font-size: 40px; text-transform: uppercase; line-height: 1.05">The next event &amp; sign-up</h2>
+<p style="margin: 0; max-width: 560px; color: #D5DED9">The date, time and details for our next cornhole event are always posted on our sign-up form.</p>
+</div>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdEK67P55hdbMMeNfn7Ypow0qqwEXehZMyn934NqGanV1yHfw/viewform?usp=header" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 30px; border-radius: 8px; background: #F2A93B; color: #0E3B2E; font-weight: 700; font-size: 18px; text-decoration: none">Sign up your team<svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 88px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 8px 16px; margin-bottom: 20px">
+<div>
+<div style="font-family: Oswald, sans-serif; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: #3E6B59">At the boards</div>
+<h2 style="margin: 6px 0 0; font-family: Oswald, sans-serif; font-size: 40px; text-transform: uppercase; line-height: 1.05">Tournament gallery</h2>
+</div>
+<div style="display: flex; gap: 10px"><button type="button" aria-label="Previous photos" data-dc-click="0" style="width: 48px; height: 48px; border-radius: 999px; border: 1.5px solid #B8C4BD; background: #FFFFFF; color: #0E3B2E; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></button><button type="button" aria-label="Next photos" data-dc-click="1" style="width: 48px; height: 48px; border-radius: 999px; border: 1.5px solid #B8C4BD; background: #FFFFFF; color: #0E3B2E; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></button></div>
+
+</div>
+<div class="gtrack" data-dc-ref="2" style="display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding-bottom: 4px">
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/a6cf4343d417b20bf4542d484e8059d7.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/a6cf4343d417b20bf4542d484e8059d7.jpg" alt="Cornhole at Fair Winds, Aug 2026" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Aug 2026</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/d70623dc5fe6e19e57685f719f654c78.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/d70623dc5fe6e19e57685f719f654c78.jpg" alt="Cornhole at Fair Winds, Aug 2026" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Aug 2026</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/c44addedf8999c156662d43a16de5c92.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/c44addedf8999c156662d43a16de5c92.jpg" alt="Cornhole at Fair Winds, Jun 2026" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Jun 2026</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/27d7a6214446c0538a7a60aa2f8f9cdb.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/27d7a6214446c0538a7a60aa2f8f9cdb.jpg" alt="Cornhole at Fair Winds, Jun 2026" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Jun 2026</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/b960563dccd4ba17a73ad5934861b0b6.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/b960563dccd4ba17a73ad5934861b0b6.jpg" alt="Cornhole at Fair Winds, Mar 2026" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Mar 2026</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/09ace89603c80be0251b6cb6612f720b.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/09ace89603c80be0251b6cb6612f720b.jpg" alt="Cornhole at Fair Winds, Jan 2026" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Jan 2026</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/d993076e31b6db2abe7f2427260d408a.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/d993076e31b6db2abe7f2427260d408a.jpg" alt="Cornhole at Fair Winds, Dec 2025" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Dec 2025</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/d321f7915bda9b2bac111a744df8c52e.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/d321f7915bda9b2bac111a744df8c52e.jpg" alt="Cornhole at Fair Winds, Ladies Night, Nov 2025" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Ladies Night · Nov 2025</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/5bffd7e4a0c56c4f83e14f8f18c75166.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/5bffd7e4a0c56c4f83e14f8f18c75166.jpg" alt="Cornhole at Fair Winds, Oct 2025" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Oct 2025</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/7a2c0a4857841d683affd4d56a7a6a68.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/7a2c0a4857841d683affd4d56a7a6a68.jpg" alt="Cornhole at Fair Winds, Oct 2025" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Oct 2025</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/3e2bde206d48ebf41fd04fa7db31211b.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/3e2bde206d48ebf41fd04fa7db31211b.jpg" alt="Cornhole at Fair Winds, Aug 2025" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Aug 2025</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/4f3993476cae14b5dcb868d514258fa3.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/4f3993476cae14b5dcb868d514258fa3.jpg" alt="Cornhole at Fair Winds, Aug 2025" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Aug 2025</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/24d6d85ba024e512eb3183051975bc15.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/24d6d85ba024e512eb3183051975bc15.jpg" alt="Cornhole at Fair Winds, Jul 2025" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Jul 2025</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/788619f5f1d590bc06cd962bbda2c5b4.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/788619f5f1d590bc06cd962bbda2c5b4.jpg" alt="Cornhole at Fair Winds, May 2025" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">May 2025</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/b01c0bb98ac8a23264f6a55c25fd7e98.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/b01c0bb98ac8a23264f6a55c25fd7e98.jpg" alt="Cornhole at Fair Winds, May 2025" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">May 2025</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/dbbfde33377769da506d442d00a87c1c.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/dbbfde33377769da506d442d00a87c1c.jpg" alt="Cornhole at Fair Winds, Apr 2025" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Apr 2025</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/a081fc0096865c16daf5f024006b005c.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/a081fc0096865c16daf5f024006b005c.jpg" alt="Cornhole at Fair Winds, Feb 2025" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Feb 2025</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/8102ebe846612b05bf203dbb199aafa3.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/8102ebe846612b05bf203dbb199aafa3.jpg" alt="Cornhole at Fair Winds, Dec 2024" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Dec 2024</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/ba1164416981767995cde02ccf633cf4.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/ba1164416981767995cde02ccf633cf4.jpg" alt="Cornhole at Fair Winds, Nov 2024" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Nov 2024</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/3ec775c746363c6bd1a8bc94e5646c97.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/3ec775c746363c6bd1a8bc94e5646c97.jpg" alt="Cornhole at Fair Winds, Ladies Night, Nov 2024" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Ladies Night · Nov 2024</div></div>
+<div style="flex: 0 0 calc((100% - 32px) / 3); min-width: 240px; scroll-snap-align: start; aspect-ratio: 3 / 4; border-radius: 10px; overflow: hidden; background: #0B2F25; position: relative"><img src="images/2559ce0568db4db0f64b4ce85b86ab37.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(20px) brightness(0.5); transform: scale(1.15)"><img src="images/2559ce0568db4db0f64b4ce85b86ab37.jpg" alt="Cornhole at Fair Winds, Oct 2024" style="position: relative; width: 100%; height: 100%; object-fit: contain; display: block"><div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; background: linear-gradient(transparent, rgba(11,47,37,0.92)); color: #FFFFFF; font-family: Oswald, sans-serif; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">Oct 2024</div></div>
+</div>
+</section>
+
+<footer class="foot tex" style="background: #0B2F25; color: #C9D3CD">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 28px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between">
+<div style="flex: 1 1 280px; max-width: 360px">
+<div style="display: flex; align-items: center; gap: 14px"><img src="images/98b2130be4f89eab382b0331aed8713c.png" alt="" style="height: 64px; width: auto; display: block"><div style="font-family: Oswald, sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.06em; text-transform: uppercase; color: #FFFFFF">Old Man Sports Club</div></div>
+<p style="margin: 10px 0 0">Competition and camaraderie. All who share those values are welcome.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: Oswald, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: #FFFFFF; font-size: 14px">Explore</div>
+<a href="index.html">Home</a><a href="pickleball.html">Pickleball</a><a href="cornhole.html">Cornhole</a><a href="pentathlon.html">Pentathlon</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: Oswald, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: #FFFFFF; font-size: 14px">Connect</div>
+<a href="contact.html">Contact us</a><a href="https://www.instagram.com/oldmansportsclub">Instagram</a>
+</div>
+</div>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px 32px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 14px">© 2026 Old Man Sports Club</div>
+</footer>
+
+</div>
+</div>
+<script type="module" src="js/cornhole.js"></script>
+</body>
+</html>

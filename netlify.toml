@@ -1,0 +1,5 @@
+# The finished website lives in the "site" folder and is already built,
+# so Netlify only needs to publish it. No build step required.
+[build]
+  publish = "site"
+  command = ""
