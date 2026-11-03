@@ -230,8 +230,9 @@ playCard() {
 var self = this;
 var v = this.cards[this.cardIdx];
 if (this.cardTimer) clearTimeout(this.cardTimer);
-// safety net: move on even if a browser blocks playback
-this.cardTimer = setTimeout(function () { self.nextCard(); }, 20000);
+// each video plays a short clip (about 6 seconds), then the next card's video starts;
+// this also moves things along if a browser blocks playback
+this.cardTimer = setTimeout(function () { self.nextCard(); }, 6000);
 if (v) { try { v.currentTime = 0; } catch (e) {} this.tryPlay(v); }
 }
 nextCard() {
