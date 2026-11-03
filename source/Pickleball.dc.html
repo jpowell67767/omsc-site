@@ -189,8 +189,11 @@ this.galNext = function () { self.galMove(1); };
 }
 renderVals() {
 // GPN-EVENTS-START (updated automatically from the OMSC GPN network page)
-var updated = 'Oct 25, 2026';
-var games = [];
+var updated = 'Nov 3, 2026';
+var games = [
+{ dow: 'Sun', day: '8', mon: 'Nov', name: 'Sunday Funday', time: '9:30 AM', place: 'Levelle W. Dupell Park, Lorton, VA', url: 'https://www.globalpickleball.network/network/events/event/viewEvent/4232_102221-sunday-funday' },
+{ dow: 'Wed', day: '11', mon: 'Nov', name: 'Salute To Service', time: '10:00 AM', place: 'Levelle W. Dupell Park, Lorton, VA', url: 'https://www.globalpickleball.network/network/events/event/viewEvent/4232_102222-salute-to-service' }
+];
 // GPN-EVENTS-END
 return { trackRef: this.trackRef, galPrev: this.galPrev, galNext: this.galNext, accent: this.props.accent ?? '#D4F04C', updated: updated, games: games, noGames: games.length === 0 };
 }
