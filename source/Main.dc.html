@@ -221,25 +221,26 @@ try { var p = v.play(); if (p && p.catch) p.catch(function () {}); } catch (e) {
 setupCard(i, el) {
 if (!el || el === this.cards[i]) return;
 var self = this;
-this.prep(el); el.loop = false;
-el.addEventListener('ended', function () { if (self.cardIdx === i) self.nextCard(); });
+this.prep(el); el.loop = true;
 this.cards[i] = el;
-if (i === this.cardIdx) this.playCard();
+// All three card videos play together, muted and looping. Each plays only while it is
+// on screen (saves battery and data), and visitors who ask for reduced motion see the
+// still poster image instead. If a browser blocks autoplay, the poster simply stays up.
+var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (reduce) return;
+if ('IntersectionObserver' in window) {
+if (!this.io) {
+this.io = new IntersectionObserver(function (entries) {
+entries.forEach(function (en) {
+if (en.isIntersecting) self.tryPlay(en.target);
+else { try { en.target.pause(); } catch (e) {} }
+});
+}, { threshold: 0.25 });
 }
-playCard() {
-var self = this;
-var v = this.cards[this.cardIdx];
-if (this.cardTimer) clearTimeout(this.cardTimer);
-// each video plays a short clip (about 6 seconds), then the next card's video starts;
-// this also moves things along if a browser blocks playback
-this.cardTimer = setTimeout(function () { self.nextCard(); }, 6000);
-if (v) { try { v.currentTime = 0; } catch (e) {} this.tryPlay(v); }
+this.io.observe(el);
+} else {
+this.tryPlay(el);
 }
-nextCard() {
-var cur = this.cards[this.cardIdx];
-if (cur) { try { cur.pause(); cur.currentTime = 0; } catch (e) {} }
-this.cardIdx = (this.cardIdx + 1) % 3;
-this.playCard();
 }
 componentDidMount() {
 var self = this;
@@ -252,7 +253,7 @@ self.galMove(1, false);
 }
 componentWillUnmount() {
 if (this.timer) clearInterval(this.timer);
-if (this.cardTimer) clearTimeout(this.cardTimer);
+if (this.io) this.io.disconnect();
 }
 renderVals() {
 return {
