@@ -3,6 +3,7 @@ export function T(v,R,E){let o="";o+="\n\n";o+="<div";o+=" style=\"font-family: 
 class Component extends DCLogic {
 renderVals() {
 var champs = [
+{ year: 2026, team: 'Scott & Mike' },
 { year: 2025, team: 'Vinny & Andy' },
 { year: 2024, team: 'Vinny & Andy' },
 { year: 2022, team: 'Sean & Jimmy' },

@@ -8,6 +8,8 @@ this.state = { slide: 0 };
 // Banner photos, in order. The 1980s original always comes first.
 this.photos = [
 { src: 'images/8afeefeed11a38cde1ac6abe95a97ddd.jpg', alt: 'The original Old Man Pentathlon crew in New Jersey in the 1980s', caption: 'Where it started · 1980s', fit: 'contain', ms: 7000 },
+{ src: 'images/cb3185c9174aebc67f96fc5a0ae3bedd.jpg', alt: 'The OMP XVII crew on stage with the turtle trophy and champions cups, 2026', caption: 'OMP XVII champions · 2026', fit: 'cover', pos: 'center 40%', ms: 5000 },
+{ src: 'images/0ccdd58c609149a5ca87474828bfd88f.jpg', alt: 'The OMP XVII crew together on the golf course, 2026', caption: 'OMP XVII on the course · 2026', fit: 'cover', pos: 'center 45%', ms: 5000 },
 { src: 'images/e6976323cae9a3bf29160740b165f928.jpg', alt: 'The Old Man Pentathlon turtle trophy with 2025 champions cups and a table of OMP hats', caption: 'The turtle trophy', fit: 'cover', pos: '55% 70%', ms: 5000 },
 { src: 'images/f834c94e5bb462f1727dde3088aac0be.jpg', alt: 'The OMP crew together at the bar after the events', caption: 'The crew', fit: 'cover', pos: 'center 60%', ms: 5000 },
 { src: 'images/6e0ebf233585ffddff21e7b902033453.jpg', alt: 'An OMP foursome in matching shirts on the golf course', caption: 'Golf', fit: 'cover', pos: 'center 30%', ms: 5000 },
