@@ -21,6 +21,7 @@ renderVals() {
 // GPN-EVENTS-START (updated automatically from the OMSC GPN network page)
 var updated = 'Nov 16, 2026';
 var games = [
+{ dow: 'Sun', day: '22', mon: 'Nov', name: 'Sunday Open Play', time: '9:30 AM', place: 'Newington Park', url: 'https://www.globalpickleball.network/network/events/4232-om-sports-club-network' }
 ];
 // GPN-EVENTS-END
 return { trackRef: this.trackRef, galPrev: this.galPrev, galNext: this.galNext, accent: this.props.accent ?? '#D4F04C', updated: updated, games: games, noGames: games.length === 0 };
