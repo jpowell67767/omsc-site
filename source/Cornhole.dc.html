@@ -126,7 +126,9 @@ footer > div[style*="padding: 56px"]{padding-top:36px !important;gap:24px !impor
 <p style="margin: 0; max-width: 560px; color: #D5DED9">The date, time and details for our next cornhole event are always posted on our sign-up form.</p>
 </div>
 </sc-if>
+<sc-if value="{{signupOpen}}" hint-placeholder-val="{{ true }}">
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEK67P55hdbMMeNfn7Ypow0qqwEXehZMyn934NqGanV1yHfw/viewform?usp=header" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 30px; border-radius: 8px; background: {{accent}}; color: #0E3B2E; font-weight: 700; font-size: 18px; text-decoration: none">Sign up your team<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</sc-if>
 </div>
 </section>
 
@@ -212,11 +214,13 @@ name: 'Next Tournament',
 time: 'January 2027',
 place: 'Details coming soon',
 details: [
-{ text: 'Date, time and location will be posted here and on Instagram @oldmansportsclub' }
-]
+{ text: 'Date, time and location will be posted here and on Instagram @oldmansportsclub' },
+{ text: 'The sign-up link will go live here once the details are posted' }
+],
+signup: false
 };
 // CORNHOLE-EVENT-END
-return { trackRef: this.trackRef, galPrev: this.galPrev, galNext: this.galNext, accent: this.props.accent ?? '#D4F04C', ev: event || { details: [] }, hasEvent: !!event, noEvent: !event };
+return { trackRef: this.trackRef, galPrev: this.galPrev, galNext: this.galNext, accent: this.props.accent ?? '#D4F04C', ev: event || { details: [] }, hasEvent: !!event, noEvent: !event, signupOpen: !(event && event.signup === false) };
 }
 }
 </script>
