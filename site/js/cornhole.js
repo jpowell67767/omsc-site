@@ -20,14 +20,12 @@ this.galNext = function () { self.galMove(1); };
 renderVals() {
 // CORNHOLE-EVENT-START (updated automatically from the OMSC cornhole sign-up form)
 var event = {
-dow: 'Thu', day: '19', mon: 'Nov',
-name: 'Bags & Brews',
-time: '5:30 – 9:00 PM',
-place: 'Fair Winds Brewing Company',
+dow: 'Coming', day: 'JAN', mon: '2027',
+name: 'Next Tournament',
+time: 'January 2027',
+place: 'Details coming soon',
 details: [
-{ text: 'Limited to 15 teams' },
-{ text: 'Free if registered by Nov 13 · $10 after' },
-{ text: 'Pool play, then a tournament bracket, grouped by playing level' }
+{ text: 'Date, time and location will be posted here and on Instagram @oldmansportsclub' }
 ]
 };
 // CORNHOLE-EVENT-END
